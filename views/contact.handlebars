@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Movie Easy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="public/css/style.css">
+  <link rel="stylesheet" href="src/App.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#" ><img width="50" src="src/unnamed.png"/> Movie Free Watch</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="ค้นหาภาพยนต์" aria-label="Search">
+      <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div class="container-fluid bg-dark-edit">
+  <div class="row">
+      <div class="col">
+        <nav class="nav nav-pills nav-justified py-2">
+        <a class="nav-item nav-link active" href="#"><span class="badge badge-light">1</span> เลือก รอบภาพยนตร์</a>
+        <a class="nav-item nav-link" href="#"><span class="badge badge-light">2</span> จอง/ชำระเงิน</a>
+        </nav>
+      </div>
+  </div>
+  <div class="alert alert-success alert-dismissible">
+     <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Status!</strong>  {{msg}}
+</div>
+  <div class="row">
+    <div class="col-12 col-md-3 ">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card">
+                <img class="card-img-top" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/to0spRl1CMDvyUbOnbb4fTk3VAd.jpg" alt="Card image cap">
+            </div>   
+    </div>
+    <div class="carousel-item">
+    <div class="card">
+                <img class="card-img-top" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/AkJQpZp9WoNdj7pLYSj1L0RcMMN.jpg" alt="Card image cap">
+            </div>   
+    </div>
+    <div class="carousel-item">
+       <div class="card">
+                <img class="card-img-top" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/5LYSsOPzuP13201qSzMjNxi8FxN.jpg" alt="Card image cap">
+            </div>  
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+<div class="col-12 col-md-6 " style="background-image: url(https://i2.wp.com/konsolowe.info/wp-content/uploads/2018/05/morderstwo-w-orient-expressie-tlo.jpg?ssl=1);">
+  <div class="text-white">
+    <p class="text"><h1 class="text-danger">หนังใหม่ชนโรง!</h1> </p>
+
+    <p class="text"><h4 class="">ต้อนรับสู่ประสบการณ์ที่แปลกใหม่ ไม่เหมือนใคร ไม่รู้ลืม</h4> </p>
+     <p class="text"><h4 class="">เปิดโลกของคุณที่นี่ ที่เดียว!</h4> </p>
+     <button type="button" data-toggle="modal" data-target="#Modal"  class="btn btn-primary btn-lg">สมัครสมาชิก VIP</button>
+       <div class="modal fade bottom" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header bg-danger">
+          <h4 class="modal-title text-white">VIP</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+      
+     
+  </div>
+  </div>
+  <div class="col-12 col-md-3">
+  <div class="text-white">
+  <div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start bg-dark">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1 text-white">อันดับ 1</h5>
+      <small class="text-white">3 days ago</small>
+    </div>
+    <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/to0spRl1CMDvyUbOnbb4fTk3VAd.jpg" alt="" border="0" height="100" width="130" style="max-width: 130px;">
+  </a>
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">อันดับ 2</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+     <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/5LYSsOPzuP13201qSzMjNxi8FxN.jpg" alt="" border="0" height="100" width="130" style="max-width: 130px;">
+  </a>
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">อันดับ 3</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/rW0A73hjzPWVwADlCTLnjLhAFLX.jpg" alt="" border="0" height="100" width="130" style="max-width: 130px;">
+  </a>
+</div>
+ 
+  </div>
+  </div>
+
+  </div>
+  <div class="row justify-content-center py-2">
+      <div class="col-12 mb-2">
+          <div class="btn-group" role="group" aria-label="Basic example">
+             <button type="button" class="btn btn-primary">All</button>
+            <button type="button" class="btn btn-outline-light"><i class="far fa-grin-stars"></i> New</button>
+            <button type="button" class="btn btn-outline-info">Today</button>      
+            </div>
+      </div>
+<div class="col-12 col-sm-6 col-md-3 mb-2">
+          <div class="card">
+                <img class="card-img-top" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/to0spRl1CMDvyUbOnbb4fTk3VAd.jpg" alt="Card image cap">
+                 <div class="card-body">
+                    <h5 class="card-title"> DeadPool 2</h5>
+                    <p class="card-text">วันที่เข้าฉาย: 26/07/18</p>                             
+                    <a href="#" role="button" data-toggle="modal" data-target="#movie1" class="card-link text-center d-block">เรื่องย่อ</a>
+                    <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-block">จอง/ชำระเงิน</button>                 
+                   
+                   
+                   </div>
+            </div>   
+            <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header bg-warning">
+          <h4 class="modal-title text-white">ชำระเงิน</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+           <img class="card-img-top" width="166" height="320" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/to0spRl1CMDvyUbOnbb4fTk3VAd.jpg" alt="Card image cap">
+        <p>ราคา 120 /คน </p>
+        <form method="POST" action="send">
+    <div class="form-group row">
+         <input type="number" hidden="hidden" class="form-control" name="price" value="120" >
+           <input type="text" hidden="hidden" class="form-control" name="movie" value="Deadpool" >
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="person" placeholder="จำนวนคน">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="money" placeholder="จำนวนเงิน">
+        <small id="passwordHelpBlock" class="form-text text-muted">
+        <i class="fas fa-info-circle"></i> Ex. แบงค์ 1,000, แบงค์ 500, แบงค์ 100, แบงค์ 50 etc
+        </small>
+      </div>
+    </div>
+     <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="e-mail" class="form-control" name="email" placeholder="E-mail">
+      </div>
+    </div>
+     <div class="form-group row">
+       <div class="col-12">
+         <button type="submit" class="btn btn-success">Submit</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+       </div>
+     </div>
+     
+    </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="movie1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">เรื่องย่อ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">          
+              <iframe width="100%" height="480" src="https://www.youtube.com/embed/D86RtevtfrA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+              <p>ราคา 120 /คน </p>
+            </div>
+          </div>
+        </div>                      
+        <form method="POST" action="send">
+    <div class="form-group row">
+         <input type="number" hidden="hidden" class="form-control" name="price" value="120" >
+           <input type="text" hidden="hidden" class="form-control" name="movie" value="Deadpool" >
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="person" placeholder="จำนวนคน">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="money" placeholder="จำนวนเงิน">
+         <small id="passwordHelpBlock" class="form-text text-muted">
+        <i class="fas fa-info-circle"></i> Ex. แบงค์ 1,000, แบงค์ 500, แบงค์ 100, แบงค์ 50 etc
+        </small>
+      </div>
+    </div>
+     <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="e-mail" class="form-control" name="email" placeholder="E-mail">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-12">
+        <button type="submit" class="btn btn-success">Submit</button>
+       <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-12 col-sm-6 col-md-3 mb-2">
+          <div class="card">
+                <img class="card-img-top" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/AkJQpZp9WoNdj7pLYSj1L0RcMMN.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Mission Impossible</h5>
+                    <p class="card-text">วันที่เข้าฉาย: 26/07/18</p>       
+                     <a href="#" role="button" data-toggle="modal" data-target="#movie2" class="card-link text-center d-block">เรื่องย่อ</a>                       
+                    <button type="button" data-toggle="modal" data-target="#myModal2"  class="btn btn-primary btn-block">จอง/ชำระเงิน</button>
+                    </div> 
+                     <div class="modal fade" id="myModal2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header bg-warning">
+          <h4 class="modal-title text-white">ชำระเงิน</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+           <img class="card-img-top" width="166" height="" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/AkJQpZp9WoNdj7pLYSj1L0RcMMN.jpg" alt="Card image cap">
+        <p class="text-dark">ราคา 150 /คน </p>
+        <form method="POST" action="send">
+    <div class="form-group row">
+         <input type="number" hidden="hidden" class="form-control" name="price" value="150" >
+           <input type="text" hidden="hidden" class="form-control" name="movie" value="Mission Impossible" >
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="person" placeholder="จำนวนคน">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="money" placeholder="จำนวนเงิน">
+         <small id="passwordHelpBlock" class="form-text text-muted">
+        <i class="fas fa-info-circle"></i> Ex. แบงค์ 1,000, แบงค์ 500, แบงค์ 100, แบงค์ 50 etc
+        </small>
+      </div>
+    </div>
+     <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="e-mail" class="form-control" name="email" placeholder="E-mail">
+      </div>
+    </div>
+     <div class="form-group row">
+       <div class="col-12">
+         <button type="submit" class="btn btn-success">Submit</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+       </div>
+     </div>
+    </form>
+        </div>
+      </div>
+    </div>
+  </div>
+                    
+                </div>
+                </div>
+<div class="modal fade" id="movie2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">เรื่องย่อ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">          
+              <iframe width="100%" height="480" src="https://www.youtube.com/embed/XiHiW4N7-bo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <p>When an IMF mission ends badly, the world is faced with dire consequences. As Ethan Hunt takes it upon himself to fulfil his original briefing, the CIA begin to question his loyalty and his motives. The IMF team find themselves in a race against time, hunted by assassins while trying to prevent a global catastrophe.</p>
+              <p>ราคา 120 /คน </p>
+            </div>
+          </div>
+        </div>                      
+        <form method="POST" action="send">
+    <div class="form-group row">
+         <input type="number" hidden="hidden" class="form-control" name="price" value="120" >
+           <input type="text" hidden="hidden" class="form-control" name="movie" value="Mission Impossible" >
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="person" placeholder="จำนวนคน">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="money" placeholder="จำนวนเงิน">
+         <small id="passwordHelpBlock" class="form-text text-muted">
+        <i class="fas fa-info-circle"></i> Ex. แบงค์ 1,000, แบงค์ 500, แบงค์ 100, แบงค์ 50 etc
+        </small>
+      </div>
+    </div>
+     <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="e-mail" class="form-control" name="email" placeholder="E-mail">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-12">
+        <button type="submit" class="btn btn-success">Submit</button>
+       <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-12 col-sm-6 col-md-3 mb-2">
+          <div class="card">
+                <img class="card-img-top" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/5LYSsOPzuP13201qSzMjNxi8FxN.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">SKYSCARPER</h5>
+                    <p class="card-text">วันที่เข้าฉาย: 26/07/18</p>                             
+                    <a href="#"  role="button" data-toggle="modal" data-target="#movie3" class="card-link text-center d-block">เรื่องย่อ</a>
+                    <button type="button" data-toggle="modal" data-target="#myModal3" class="btn btn-primary btn-block">จอง/ชำระเงิน</button>
+                    </div> 
+
+   <div class="modal fade" id="myModal3">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header bg-warning">
+          <h4 class="modal-title text-white">ชำระเงิน</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+           <img class="card-img-top" width="166" height="" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/5LYSsOPzuP13201qSzMjNxi8FxN.jpg" alt="Card image cap">
+        <p class="text-dark">ราคา 150 /คน </p>
+        <form method="POST" action="send">
+    <div class="form-group row">
+         <input type="number" hidden="hidden" class="form-control" name="price" value="150" >
+           <input type="text" hidden="hidden" class="form-control" name="movie" value="SKYSCARPER" >
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="person" placeholder="จำนวนคน">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="money" placeholder="จำนวนเงิน">
+         <small id="passwordHelpBlock" class="form-text text-muted">
+        <i class="fas fa-info-circle"></i> Ex. แบงค์ 1,000, แบงค์ 500, แบงค์ 100, แบงค์ 50 etc
+        </small>
+      </div>
+    </div>
+     <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="e-mail" class="form-control" name="email" placeholder="E-mail">
+      </div>
+    </div>
+     <div class="form-group row">
+       <div class="col-12">
+         <button type="submit" class="btn btn-success">Submit</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+       </div>
+     </div>
+    </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="movie3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="exampleModalLabel">เรื่องย่อ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">          
+              <iframe width="100%" height="480" src="https://www.youtube.com/embed/t9QePUT-Yt8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <p class="text-dark"> Framed and on the run, a former FBI agent must save his family from a blazing fire in the world's tallest building</p>
+              <p class="text-dark">ราคา 150 /คน </p>
+            </div>
+          </div>
+        </div>                      
+        <form method="POST" action="send">
+    <div class="form-group row">
+         <input type="number" hidden="hidden" class="form-control" name="price" value="150" >
+           <input type="text" hidden="hidden" class="form-control" name="movie" value="SKYSCRAPER" >
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="person" placeholder="จำนวนคน">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="money" placeholder="จำนวนเงิน">
+         <small id="passwordHelpBlock" class="form-text text-muted">
+        <i class="fas fa-info-circle"></i> Ex. แบงค์ 1,000, แบงค์ 500, แบงค์ 100, แบงค์ 50 etc
+        </small>
+      </div>
+    </div>
+     <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="e-mail" class="form-control" name="email" placeholder="E-mail">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-12">
+        <button type="submit" class="btn btn-success">Submit</button>
+       <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-2">
+          <div class="card">
+                <img class="card-img-top" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/ms2hNcHSvtsI0zrocRZuMt8O1kS.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Ready player one</h5>
+                    <p class="card-text">วันที่เข้าฉาย: 29/03/18</p>                             
+                    <a href="#" role="button" data-toggle="modal" data-target="#movie4" class="card-link text-center d-block">เรื่องย่อ</a>
+                    <button type="button" data-toggle="modal" data-target="#myModal4" class="btn btn-primary btn-block">จอง/ชำระเงิน</button>
+                    </div> 
+                     <div class="modal fade" id="myModal4">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header bg-warning">
+          <h4 class="modal-title text-white">ชำระเงิน</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+           <img class="card-img-top" width="166" height="" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/ms2hNcHSvtsI0zrocRZuMt8O1kS.jpg" alt="Card image cap">
+        <p class="text-dark">ราคา 160 /คน </p>
+        <form method="POST" action="send">
+    <div class="form-group row">
+         <input type="number" hidden="hidden" class="form-control" name="price" value="160" >
+           <input type="text" hidden="hidden" class="form-control" name="movie" value="Ready player one" >
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="person" placeholder="จำนวนคน">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="money" placeholder="จำนวนเงิน">
+         <small id="passwordHelpBlock" class="form-text text-muted">
+        <i class="fas fa-info-circle"></i> Ex. แบงค์ 1,000, แบงค์ 500, แบงค์ 100, แบงค์ 50 etc
+        </small>
+      </div>
+    </div>
+     <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="e-mail" class="form-control" name="email" placeholder="E-mail">
+      </div>
+    </div>
+     <div class="form-group row">
+       <div class="col-12">
+         <button type="submit" class="btn btn-success">Submit</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+       </div>
+     </div>
+    </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+                </div>
+                </div>
+<div class="modal fade" id="movie4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="exampleModalLabel">เรื่องย่อ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">          
+              <iframe width="100%" height="480" src="https://www.youtube.com/embed/cSp1dM2Vj48" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <p class="text-dark">  เป็นเรื่องราวที่เกิดขึ้นเมื่อปี 2045 ช่วงที่โลกเต็มไปด้วยความวุ่นวายและการล่มสลาย แต่ผู้คนพบทางรอดชีวิตที่ดิ โอเอซิส ซึ่งเป็นจักรวาลเสมือนจริงอันกว้างใหญ่ที่เราสามารถไปที่ไหนก็ได้ ทำอะไรก็ได้ เป็นใครก็ได้ ดิ โอเอซิสสร้างขึ้นโดย เจมส์ ฮัลลิเดย์ (มาร์ค ไรแลนซ์) เมื่อฮัลลิเดย์เสียชีวิตลง เขาได้ทิ้งทรัพย์สมบัติมหาศาลและอำนาจในการควบคุมดิ โอเอซิสทั้งหมดให้กับคนแรกที่ได้กุญแจทั้ง 3 ดอก เพื่อเปิดประตูสู่ไข่อีสเตอร์ดิจิตอลที่เขาซ่อนไว้ในสถานที่ ความท้าทายของเขาทำให้เกิดเกมที่มีการแข่งขันขึ้นทั่วโลก แต่เมื่อเวลาผ่านไป 5 ปีกระดานคะแนนกลับยังว่างเปล่า... จนถึงบัดนี้</p>
+              <p class="text-dark">ราคา 160 /คน </p>
+            </div>
+          </div>
+        </div>                      
+        <form method="POST" action="send">
+    <div class="form-group row">
+         <input type="number" hidden="hidden" class="form-control" name="price" value="160" >
+           <input type="text" hidden="hidden" class="form-control" name="movie" value="Ready player one" >
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="person" placeholder="จำนวนคน">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="money" placeholder="จำนวนเงิน">
+         <small id="passwordHelpBlock" class="form-text text-muted">
+        <i class="fas fa-info-circle"></i> Ex. แบงค์ 1,000, แบงค์ 500, แบงค์ 100, แบงค์ 50 etc
+        </small>
+      </div>
+    </div>
+     <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="e-mail" class="form-control" name="email" placeholder="E-mail">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-12">
+        <button type="submit" class="btn btn-success">Submit</button>
+       <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+                <div class="col-12 col-sm-6 col-md-3 mb-2">
+          <div class="card">
+                <img class="card-img-top" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Jurassic World: Fallen Kingdom (2018)</h5>
+                    <p class="card-text">วันที่เข้าฉาย: 26/07/18</p>                             
+                    <a href="#" role="button" data-toggle="modal" data-target="#movie5"  class="card-link text-center d-block">เรื่องย่อ</a>
+                    <button type="button" data-toggle="modal" data-target="#myModal5" class="btn btn-primary btn-block">จอง/ชำระเงิน</button>
+                    </div> 
+                  <div class="modal fade" id="myModal5">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header bg-warning">
+          <h4 class="modal-title text-white">ชำระเงิน</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+           <img class="card-img-top" width="166" height="" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg" alt="Card image cap">
+        <p class="text-dark">ราคา 130 /คน </p>
+        <form method="POST" action="send">
+    <div class="form-group row">
+         <input type="number" hidden="hidden" class="form-control" name="price" value="130" >
+           <input type="text" hidden="hidden" class="form-control" name="movie" value="Jurassic World: Fallen Kingdom (2018)" >
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="person" placeholder="จำนวนคน">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="money" placeholder="จำนวนเงิน">
+         <small id="passwordHelpBlock" class="form-text text-muted">
+        <i class="fas fa-info-circle"></i> Ex. แบงค์ 1,000, แบงค์ 500, แบงค์ 100, แบงค์ 50 etc
+        </small>
+      </div>
+    </div>
+     <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="e-mail" class="form-control" name="email" placeholder="E-mail">
+      </div>
+    </div>
+     <div class="form-group row">
+       <div class="col-12">
+         <button type="submit" class="btn btn-success">Submit</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+       </div>
+     </div>
+    </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+                    
+                </div>
+                </div>
+
+<div class="modal fade" id="movie5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="exampleModalLabel">เรื่องย่อ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">          
+              <iframe width="100%" height="480" src="https://www.youtube.com/embed/vn9mMeWcgoM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <p class="text-dark"> Several years after the demise of Jurassic World, a volcanic eruption threatens the remaining dinosaurs on the island of Isla Nublar. Claire Dearing, the former park manager and founder of the Dinosaur Protection Group, recruits Owen Grady to help prevent the extinction of the dinosaurs once again.</p>
+              <p class="text-dark">ราคา 130 /คน </p>
+            </div>
+          </div>
+        </div>                      
+        <form method="POST" action="send">
+    <div class="form-group row">
+         <input type="number" hidden="hidden" class="form-control" name="price" value="130" >
+           <input type="text" hidden="hidden" class="form-control" name="movie" value="Jurassic World: Fallen Kingdom (2018)" >
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="person" placeholder="จำนวนคน">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="money" placeholder="จำนวนเงิน">
+         <small id="passwordHelpBlock" class="form-text text-muted">
+        <i class="fas fa-info-circle"></i> Ex. แบงค์ 1,000, แบงค์ 500, แบงค์ 100, แบงค์ 50 etc
+        </small>
+      </div>
+    </div>
+     <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="e-mail" class="form-control" name="email" placeholder="E-mail">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-12">
+        <button type="submit" class="btn btn-success">Submit</button>
+       <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+                <div class="col-12 col-sm-6 col-md-3 mb-2">
+          <div class="card">
+                <img class="card-img-top" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/eXXpuW2xaq5Aen9N5prFlARVIvr.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Tag</h5>
+                    <p class="card-text">วันที่เข้าฉาย: 26/07/18</p>                             
+                    <a href="#" role="button" data-toggle="modal" data-target="#movie6"  class="card-link text-center d-block">เรื่องย่อ</a>
+                    <button type="button"  data-toggle="modal" data-target="#myModal6" class="btn btn-primary btn-block">จอง/ชำระเงิน</button>
+                    </div> 
+                  <div class="modal fade" id="myModal6">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header bg-warning">
+          <h4 class="modal-title text-white">ชำระเงิน</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+           <img class="card-img-top" width="166" height="" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/eXXpuW2xaq5Aen9N5prFlARVIvr.jpg"  alt="Card image cap">
+        <p class="text-dark">ราคา 130 /คน </p>
+        <form method="POST" action="send">
+    <div class="form-group row">
+         <input type="number" hidden="hidden" class="form-control" name="price" value="130" >
+           <input type="text" hidden="hidden" class="form-control" name="movie" value="Tag" >
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="person" placeholder="จำนวนคน">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="money" placeholder="จำนวนเงิน">
+         <small id="passwordHelpBlock" class="form-text text-muted">
+        <i class="fas fa-info-circle"></i> Ex. แบงค์ 1,000, แบงค์ 500, แบงค์ 100, แบงค์ 50 etc
+        </small>
+      </div>
+    </div>
+     <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="e-mail" class="form-control" name="email" placeholder="E-mail">
+      </div>
+    </div>
+     <div class="form-group row">
+       <div class="col-12">
+         <button type="submit" class="btn btn-success">Submit</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+       </div>
+     </div>
+    </form>
+        </div>
+      </div>
+    </div>
+  </div>
+                    
+                </div>
+                </div>
+
+      <div class="modal fade" id="movie6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="exampleModalLabel">เรื่องย่อ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">          
+              <iframe width="100%" height="480" src="https://www.youtube.com/embed/kjC1zmZo30U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <p class="text-dark"> For one month every year, five highly competitive friends hit the ground running in a no-holds-barred game of tag they’ve been playing since the first grade. This year, the game coincides with the wedding of their only undefeated player, which should finally make him an easy target. But he knows they’re coming...and he’s ready.</p>
+              <p class="text-dark">ราคา 130 /คน </p>
+            </div>
+          </div>
+        </div>                      
+        <form method="POST" action="send">
+    <div class="form-group row">
+         <input type="number" hidden="hidden" class="form-control" name="price" value="130" >
+           <input type="text" hidden="hidden" class="form-control" name="movie" value="Tag" >
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="person" placeholder="จำนวนคน">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="money" placeholder="จำนวนเงิน">
+         <small id="passwordHelpBlock" class="form-text text-muted">
+        <i class="fas fa-info-circle"></i> Ex. แบงค์ 1,000, แบงค์ 500, แบงค์ 100, แบงค์ 50 etc
+        </small>
+      </div>
+    </div>
+     <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="e-mail" class="form-control" name="email" placeholder="E-mail">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-12">
+        <button type="submit" class="btn btn-success">Submit</button>
+       <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+                <div class="col-12 col-sm-6 col-md-3 mb-2">
+          <div class="card">
+                <img class="card-img-top" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/xqECHNvzbDL5I3iiOVUkVPJMSbc.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">The meg</h5>
+                    <p class="card-text">วันที่เข้าฉาย: 26/07/18</p>                             
+                    <a href="#" role="button" data-toggle="modal" data-target="#movie7" class="card-link text-center d-block">เรื่องย่อ</a>
+                    <button type="button" data-toggle="modal" data-target="#myModal7" class="btn btn-primary btn-block">จอง/ชำระเงิน</button>
+                    </div> 
+                   <div class="modal fade" id="myModal7">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header bg-warning">
+          <h4 class="modal-title text-white">ชำระเงิน</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+           <img class="card-img-top" width="166" height="" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/xqECHNvzbDL5I3iiOVUkVPJMSbc.jpg"  alt="Card image cap">
+        <p class="text-dark">ราคา 160 /คน </p>
+        <form method="POST" action="send">
+    <div class="form-group row">
+         <input type="number" hidden="hidden" class="form-control" name="price" value="160" >
+           <input type="text" hidden="hidden" class="form-control" name="movie" value="The meg" >
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="person" placeholder="จำนวนคน">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="money" placeholder="จำนวนเงิน">
+         <small id="passwordHelpBlock" class="form-text text-muted">
+        <i class="fas fa-info-circle"></i> Ex. แบงค์ 1,000, แบงค์ 500, แบงค์ 100, แบงค์ 50 etc
+        </small>
+      </div>
+    </div>
+     <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="e-mail" class="form-control" name="email" placeholder="E-mail">
+      </div>
+    </div>
+     <div class="form-group row">
+       <div class="col-12">
+         <button type="submit" class="btn btn-success">Submit</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+       </div>
+     </div>
+    </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+                    
+                </div>
+                </div>
+            <div class="modal fade" id="movie7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="exampleModalLabel">เรื่องย่อ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">          
+              <iframe width="100%" height="480" src="https://www.youtube.com/embed/udm5jUA-2bs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <p class="text-dark"> A deep sea submersible pilot revisits his past fears in the Mariana Trench, and accidentally unleashes the seventy foot ancestor of the Great White Shark believed to be extinct.</p>
+              <p class="text-dark">ราคา 160 /คน </p>
+            </div>
+          </div>
+        </div>                      
+        <form method="POST" action="send">
+    <div class="form-group row">
+         <input type="number" hidden="hidden" class="form-control" name="price" value="160" >
+           <input type="text" hidden="hidden" class="form-control" name="movie" value="The meg" >
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="person" placeholder="จำนวนคน">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="money" placeholder="จำนวนเงิน">
+         <small id="passwordHelpBlock" class="form-text text-muted">
+        <i class="fas fa-info-circle"></i> Ex. แบงค์ 1,000, แบงค์ 500, แบงค์ 100, แบงค์ 50 etc
+        </small>
+      </div>
+    </div>
+     <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="e-mail" class="form-control" name="email" placeholder="E-mail">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-12">
+        <button type="submit" class="btn btn-success">Submit</button>
+       <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+                 <div class="col-12 col-sm-6 col-md-3 mb-2">
+          <div class="card">
+                <img class="card-img-top" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/nDZFsjClO6wfKLxd9CEDT4rVv6R.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">The Equalizer 2 (2018)</h5>
+                    <p class="card-text">วันที่เข้าฉาย: 26/07/18</p>                             
+                    <a href="#" role="button" data-toggle="modal" data-target="#movie8" class="card-link text-center d-block">เรื่องย่อ</a>
+                    <button type="button" data-toggle="modal" data-target="#myModal8" class="btn btn-primary btn-block">จอง/ชำระเงิน</button>
+                    </div> 
+                   <div class="modal fade" id="myModal8">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header bg-warning">
+          <h4 class="modal-title text-white">ชำระเงิน</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+           <img class="card-img-top" width="166" height="" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/nDZFsjClO6wfKLxd9CEDT4rVv6R.jpg"  alt="Card image cap">
+        <p class="text-dark">ราคา 160 /คน </p>
+        <form method="POST" action="send">
+    <div class="form-group row">
+         <input type="number" hidden="hidden" class="form-control" name="price" value="160" >
+           <input type="text" hidden="hidden" class="form-control" name="movie" value="The Equalizer 2 (2018)" >
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="person" placeholder="จำนวนคน">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="money" placeholder="จำนวนเงิน">
+         <small id="passwordHelpBlock" class="form-text text-muted">
+        <i class="fas fa-info-circle"></i> Ex. แบงค์ 1,000, แบงค์ 500, แบงค์ 100, แบงค์ 50 etc
+        </small>
+      </div>
+    </div>
+     <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="e-mail" class="form-control" name="email" placeholder="E-mail">
+      </div>
+    </div>
+     <div class="form-group row row">
+       <div class="col-12">
+         <button type="submit" class="btn btn-success">Submit</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+       </div>
+     </div>
+    </form>
+        </div>
+      </div>
+    </div>
+  </div>
+                    
+                </div>
+                </div>
+
+
+                 <div class="modal fade" id="movie8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="exampleModalLabel">เรื่องย่อ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">          
+              <iframe width="100%" height="480" src="https://www.youtube.com/embed/_V-5kmDYh9Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <p class="text-dark"> The Equalizer เป็นการหยิบเอาซีรีส์ชื่อเดียวกันในยุค 80 มาบอกเล่าเรื่องราวของ โรเบิร์ต แม็คคอล (Denzel Washington) ชายคนหนึ่งที่พยายามล้างความผิดของตัวเองในอดีต โดยการเสนอตัวเข้าไปช่วยเหลือชาวบ้านที่เดือดร้อน และได้ช่วยเหลือผู้เป็นโสเภณีวัยรุ่น (โคลอี มอเรตซ์) ที่กำลังมีปัญหาใหญ่ จนเป็นเหตุให้เขาเข้าไปพัวพันกับแก๊งมาเฟียสุดโหด</p>
+              <p class="text-dark">ราคา 160 /คน </p>
+            </div>
+          </div>
+        </div>                      
+        <form method="POST" action="send">
+    <div class="form-group row">
+         <input type="number" hidden="hidden" class="form-control" name="price" value="160" >
+           <input type="text" hidden="hidden" class="form-control" name="movie" value="The Equalizer 2 (2018)" >
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="person" placeholder="จำนวนคน">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="money" placeholder="จำนวนเงิน">
+         <small id="passwordHelpBlock" class="form-text text-muted">
+        <i class="fas fa-info-circle"></i> Ex. แบงค์ 1,000, แบงค์ 500, แบงค์ 100, แบงค์ 50 etc
+        </small>
+      </div>
+    </div>
+     <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="e-mail" class="form-control" name="email" placeholder="E-mail">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-12">
+        <button type="submit" class="btn btn-success">Submit</button>
+       <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>
+      
+      </div>
+  </div>
+</div>
+</div>
+<footer class="page-footer font-small stylish-color-dark pt-4 bg-dark">
+    <ul class="list-unstyled list-inline text-center py-2">
+      <li class="list-inline-item">
+        <h5 class="mb-1 text-white">Register for free</h5>
+      </li>
+      <li class="list-inline-item">
+        <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+      </li>
+    </ul>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 text-white">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/"> npooseedin@gmail.com</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+
+</body>
+    <script>
+    $(window).load(function() {
+      $(".btn-nav").on("click tap", function() {
+        $(".nav-container").toggleClass("showNav hideNav").removeClass("hidden");
+        $(this).toggleClass("animated");
+      });
+    });
+    $('#example').tooltip(options)
+    </script> 
+</html>

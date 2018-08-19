@@ -1,0 +1,33 @@
+{
+  "name": "movies_online",
+  "version": "0.1.0",
+  "private": true,
+  "main": "server.js",
+  "author": "Natthaphong Pooseedin <npooseedin@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.1.3",
+    "concurrently": "^3.6.1",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "jquery": "^3.3.1",
+    "nodemailer": "^4.6.8",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.4",
+    "reactstrap": "^6.3.1"
+  },
+  "engines": {
+    "node": "8.11.x"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "devDependencies": {},
+  "keywords": []
+}
